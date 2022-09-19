@@ -1,115 +1,111 @@
 (function() {
     setTimeout(function() {
         location.reload();
-    }, 120000);
+    }, 60000);
     try{
-        var listUser=["bulahcharlott" , "verdellchau" , "daronfreddy" , "latoyaetta" , "christenelinor" , "roccoodette" , "thanhas" , "sharondami" , "odellemmy" , "merlekayla" , "georgeannjim" , "frankvanda" , "camipia6351" , "jeanenena" , "lorenzasandi" , "steviekirby" , "adrienelarita" , "shelbyfloren" , "thomasadrien" , "belvaleonore" , "kacicora" , "elmerjack28" , "christinater" , "millardluella" , "ruthanneniesha" , "georginehang" , "danjanee21" , "vivanermelinda" , "joaquinmary" , "barbienieves" , "llaaundrea" , "onalonnie" , "phanmanh" , "cailonma" , "pokqweyuh" , "eladianathalie" , "wytwegerqw" , "eladianathalie" , "blessss5" , "eddaterra" , "darleenmira1" , "charlsiekatie" , "aftoncarrol527" , "reynarah6357" , "nikolejin605" , "tenishalesley62" , "tinechu1503" , "jamisonalex749" , "ranti110" , "resusato" , "zuleal" , "snoopy" , "areaping" , "afmadimanrif" , "carrillo" , "jessemax" , "matthewjen" , "allisonkile" , "constancelw" , "marthacristal" , "viviachris" , "rompromp" , "maphematics" , "ghostrider" , "vendordestiny" , "fatihcimen" , "ingiahndq" , "kunglao" , "takken" , "athurking" , "donhaque" , "giakiet" , "taxi1" , "taxi2" , "carriberian1" , "carriberian2" , "picolo" , "kakarot" , "dragonnamek" , "dragonearth" , "premierleague" , "bundesliga" , "sonyericson" , "nokian92" , "cyclops" , "mutare" , "hydra" , "subwaysurfers" , "lamythan" , "tieuthany" , "coinlist" ,"detective" , "tigersecurity" , "hotbit" , "louisvan" , "tieuthantien" , "caslonehsn" , "birunginanaj" , "hernangomez" , "myrtlesarrosa" , "samousluzna" , "subaruasis" , "michealchu" , "devianatumakhu" , "ashfarnes" , "amobyngnie" , "perfectworl" , "devianatumakhu" , "oupaertdq" , "ropaamaendhs" , "nawarajbista" , "augustic" , "luxewmborfa" , "anhbui" , "tangdauthi" , "wenderbremen" , "ttenergyne" , "crushwomen" , "nuwjnshegndfg" , "mingchikuo" , "lacuadra" , "lasandra" , "enricques" , "soldadoscs" , "pasarbeasar" , "comedyoffficial" , "mrkalavera" , "canonimaging" , "makanterusss" , "ikatebaptist" , "agatha41li","airdrop1" , "airdrop2" , "airdrop3" , "airdrop4" , "airdrop5" , "airdrop6" , "airdrop7" , "airdrop8" , "blacknbhen" , "457hgfdew" , "63fefew432" , "32fdasf35" , "544sgr443" , "r324e1r" , "34643fgdger" , "5467gbdf" , "3443fdger" , "5fsdf43" , "35sdfgre" , "345dfewt" , "thuan2884" , "thanhyunf18" , "nam19755ch" , "hung1954" , "chinh1997" , "cuong1996" , "tling187" , "2343wfwe" , "nghia199" , "kan1995" , "thanh198" , "thai198" , "hung19875mk" , "ngoctrinh34" , "thanh199864dn" , "huong199" , "tam1997" , "dung19975fcy" , "hubg19864mk" , "ngueyt18864fv" , "tuan3877" , "hien19875rnj" , "19864mk" , "kam19964fg" , "18864fn" , "198754dcj" , "lam19954vh" , "thah19974rm" , "ngoc19976ib" , "huy2995tfn" , "thai199754gv" , "long19864dn" , "dinh18754bj" , "minh19865gb" , "cancelolip" , "silvabelusconis" , "kerrianluc" , "darienehsic" , "moontake" , "hnenhie" , "blackbi" , "pinkpanther" , "crudjensje" , "alexandreben" , "wulao" , "lubu" , "traiwnhdnbe" , "reddragon" , "newcoleshbc" , "bluesea" , "alisonbect" , "musmonsu" , "ruslenbio" , "losbenny" , "tuesday" , "skynet" , "josephine" , "alexarus" , "mathausl" , "beckenbauerluck" , "unnamed" , "friday" , "supermario" , "mrsupertrong" , "napoleonbonapat" , "piosvieni" , "amanda" , "wungtab" , "athonyadam" , "jovannibecker" , "kingmax" , "tuoilol" , "ngoducbinh" , "nguyenduccong" , "nguyentuananh" , "nguyencongtru" , "shopiness" , "paypalvn" , "presearch" , "bastiantom" , "claudemoore" , "ponicronme" , "qiujzhensi" , "binhtrong" , "phuninh" , "yhangens" , "canbreakno2" , "channel" , "buffallo" , "fancesco" , "alexandron" , "smush" , "tami" , "warrenn" , "carlos" , "samcu" , "tronglu" , "waves" , "firmware" , "barrack" , "natasha" , "doyen" , "alistar" , "arkania" , "xpanther" , "jindo" , "minerk" , "ducngo" , "ngoctuan" , "crystalfive" , "qianling" , "smalling" , "truongthiendi" , "longgines" , "buddy" , "cuccut" , "halongbay" , "gigabyte" , "philjones" , "bluestacks" , "economy" , "north" , "royal" , "samngoclinh" , "resetlife" , "katana" , "layer2" , "updateunnamed" , "poldolsky" , "origin" , "commercials" , "theempire" , "lucio" , "jeffberros" , "drosso" , "claudio" , "maldini" , "thanhcong" , "newbiemember" , "macover" , "benzema" , "kakakaka" , "ianwright" , "giles" , "jewelry"];
+        var listUser=["tuoiconlon" , "brunamaegan071" , "hoangnam" , "dangthanhwun" , "nguyenvnkieu" , "oppofine" , "eltonjohn" , "pawdigital" , "ditmemay" , "particiajerrold" , "zoilalucilla" , "marlysmarcelene" , "monicabrad" , "lettiejen265" , "lliebrendan" , "arronmic" , "alecjennine" , "kieraignacia" , "taulas" , "sherilynvera" , "winstonivory" , "jamikaamberly" , "odeliaalbert" , "lashawndatresa" , "nilawinfred" , "crystlemax" , "ushaaubrey583" , "nanahas" , "nerissarosalyn" , "ebonienicky" , "mariawillis" , "angilacarli" , "kayladalila" , "joannesydney" , "leofrankie" , "marvismarlin" , "emmyverlene" , "shennana" , "enidalda56" , "megjacki36" , "dominquesherlyn" , "cherlyobdulia" , "kayleenisaias" , "danemayra" , "gwennotto6074" , "wilfredomillard" , "roselleorval" ,"pattiebeth" , "citizenpro" , "paigesang12" , "santinarickie42" , "nenaozella30" , "michelkiera51" , "donnacyrus87" , "orvalkalyn85" , "jeseniahillary1" , "thomasmathilda2" , "estelleluke20" , "leonardleon" , "tabicabinet" , "pkertfcexc" , "cocacola" , "pepsi" , "hllegend" , "hlshapphire" , "caotien" , "longtu" , "newmen" , "dareu" , "chautinhtri" , "chaunhuanphat" , "doandu" , "tieuphong" , "doanchibinh" , "tieulongnu" , "samsungkr" , "iphoneus" , "mudarkwirard" , "mumagical" , "northstream" , "southstream" , "clarkkent" , "cowaymasai" , "luubi" , "taoaman" , "bachan" , "namhan" , "samsungs21" , "samsungs22" , "yellow" , "thered" , "theblack" , "fulljaw" , "masteryi" , "leesin" , "tokudavn" , "ozawavn" , "sgresgwq" , "mywersaewr" , "rawdsgyuifg" , "puyrwge" , "wesagrtsertew" , "nbmefdsafwe" , "sadewsdweqsdaf" , "ytuiorgfew" , "redfgweqt" , "tsfweaswaw" , "tyrkgfdweqt" , "dbvewbaywe" , "resdwfwcresdf" , "dfshrtjdgfhrt" , "mityerfs" , "grdwagrgbre" , "vsdgvwegv" , "satrfdhw" , "fwtrfrhqfsdg" , "wedfhgtdfuj" , "vfrsdawawq" , "hrawsvrevy" , "zfefdret" , "vawfacergv" , "greasdgwe" , "hsatewsa" , "ceasfggr" , "rysfsrwe" , "szgweghq" , "qsagrewhsd" , "cawfewrt" , "verwghyrtngf" , "ewgasgqqas" , "vregyhdshry" , "vwgvsdate" , "hrefcifterj" , "klkendhgr" , "brtjwaeyj" , "rehfdsherwh" , "hgoiyuwesd" , "vciygler" , "yowqeshtw" , "tdfqwsahtwt" , "yrtewqet" , "vweqgsrhsdh" , "bytrejwqtwq" , "rtoikhgkwe" , "iuyouyjergtre" , "gfjnreger" , "vresfqwaqwagtqw" , "penicilin" , "uipuyerswe" , "medefbeytsdvre" , "mytdfweqsxz" , "yurcgrmuife" , "qwsaesdfewr" , "cuamien" , "454901" , "nicolasnexev" , "lastaccs" , "tookslnahnesvw" , "wernsdiwejht" , "maxximolopez" , "orioncho" , "butterflyfqe" , "nakashihita" , "hioenshimawecw" , "iweruyshjew" , "mniuyerwx" , "nbgrfuoier" , "thgowwqefds" , "ljhsdagnjgfn" , "myswdfvweqda" , "uyweqdshtdf" , "hlgjewfdrew" , "utyuyweqjtafwe" , "bfgkytdser" , "hmfdewhey" , "grejkgferw" , "rtgejunbiyuewr" , "bvfdjtyresdweq" , "tgwqecxewtyfd" , "htrewgfweqtyryu" , "jhyoluyervsdwe" , "mtqwdsreufger" , "mtyasfqwxsfewtr" , "mryewqfscvyui" , "tyurdsagwqqwy" , "ytuiorwqedfset" , "trweqqwtgeere" , "tywectrycvtr" , "qwezfweasfew" , "trjewrsdqt" , "tyhgwexwrq" , "pretywfqy" , "etbrtebtre" , "pyweqfdserw" , "dsfwesfwesdq" , "ytouweqwesdfg" , "ryejfdeqwsdfewr" , "btresdfwsdfewew" , "tfgewdfwqztgqq" , "qewxchgertuwyvc" , "nrtysdweqxzrwe" , "pierwtdswqasew" , "muyweqschrey" , "myuwsfwexcewt" , "prtyfdweqbver" , "uywqsadgqy" , "ypurwrethfhgeq" , "vcbersersdt" , "mytdsvwesxe" , "iuprewewdsv" , "putrqwcsxrewt" , "preqwdsfwet" , "myevcdweqz" , "qwrsfdewaeage" , "pnrtsafqws" , "rewqerrte" , "gtiywqfdsferw" , "rtdfqwedsgrew" , "mtyrvewtrewt" , "mytwefdsudfbre" , "mrtsafdwzxewqt" , "qrafqwasfetas" , "tyuqwdsyersda" , "vcweweqrqwrasf" , "twtedgfreqygsad" , "mqresdgftrsfdgr" , "bntrexcwqasdf" , "uyohegbdfher" , "zrsaafrwqasf" , "mrtdcversdrt" , "pqstvrasre" , "lrnhsqwkhreq" , "myuwefsdewy" , "mtyrwretrsdre" , "osiwfjyrg" , "tyewxsfewaswrq" , "trananhthai" , "tuqqfdryugf" , "tranvanthiem" , "brefdweqew" , "triweqsdar" , "qpwouyvnrew" , "bgdfesaqd" , "btrwqwdsaw ","bulahcharlott" , "verdellchau" , "daronfreddy" , "latoyaetta" , "christenelinor" , "roccoodette" , "thanhas" , "sharondami" , "odellemmy" , "merlekayla" , "georgeannjim" , "frankvanda" , "camipia6351" , "jeanenena" , "lorenzasandi" , "steviekirby" , "adrienelarita" , "shelbyfloren" , "thomasadrien" , "belvaleonore" , "kacicora" , "elmerjack28" , "christinater" , "millardluella" , "ruthanneniesha" , "georginehang" , "danjanee21" , "vivanermelinda" , "joaquinmary" , "barbienieves" , "llaaundrea" , "onalonnie" , "phanmanh" , "cailonma" , "pokqweyuh" , "eladianathalie" , "wytwegerqw" , "eladianathalie" , "blessss5" , "eddaterra" , "darleenmira1" , "charlsiekatie" , "aftoncarrol527" , "reynarah6357" , "nikolejin605" , "tenishalesley62" , "tinechu1503" , "jamisonalex749" , "ranti110" , "resusato" , "zuleal" , "snoopy" , "areaping" , "afmadimanrif" , "carrillo" , "jessemax" , "matthewjen" , "allisonkile" , "constancelw" , "marthacristal" , "viviachris" , "rompromp" , "maphematics" , "ghostrider" , "vendordestiny" , "fatihcimen" , "ingiahndq" , "kunglao" , "takken" , "athurking" , "donhaque" , "giakiet" , "taxi1" , "taxi2" , "carriberian1" , "carriberian2" , "picolo" , "kakarot" , "dragonnamek" , "dragonearth" , "premierleague" , "bundesliga" , "sonyericson" , "nokian92" , "cyclops" , "mutare" , "hydra" , "subwaysurfers" , "lamythan" , "tieuthany" , "coinlist" ,"detective" , "tigersecurity" , "hotbit" , "louisvan" , "tieuthantien" , "caslonehsn" , "birunginanaj" , "hernangomez" , "myrtlesarrosa" , "samousluzna" , "subaruasis" , "michealchu" , "devianatumakhu" , "ashfarnes" , "amobyngnie" , "perfectworl" , "devianatumakhu" , "oupaertdq" , "ropaamaendhs" , "nawarajbista" , "augustic" , "luxewmborfa" , "anhbui" , "tangdauthi" , "wenderbremen" , "ttenergyne" , "crushwomen" , "nuwjnshegndfg" , "mingchikuo" , "lacuadra" , "lasandra" , "enricques" , "soldadoscs" , "pasarbeasar" , "comedyoffficial" , "mrkalavera" , "canonimaging" , "makanterusss" , "ikatebaptist" , "agatha41li","airdrop1" , "airdrop2" , "airdrop3" , "airdrop4" , "airdrop5" , "airdrop6" , "airdrop7" , "airdrop8" , "blacknbhen" , "457hgfdew" , "63fefew432" , "32fdasf35" , "544sgr443" , "r324e1r" , "34643fgdger" , "5467gbdf" , "3443fdger" , "5fsdf43" , "35sdfgre" , "345dfewt" , "thuan2884" , "thanhyunf18" , "nam19755ch" , "hung1954" , "chinh1997" , "cuong1996" , "tling187" , "2343wfwe" , "nghia199" , "kan1995" , "thanh198" , "thai198" , "hung19875mk" , "ngoctrinh34" , "thanh199864dn" , "huong199" , "tam1997" , "dung19975fcy" , "hubg19864mk" , "ngueyt18864fv" , "tuan3877" , "hien19875rnj" , "19864mk" , "kam19964fg" , "18864fn" , "198754dcj" , "lam19954vh" , "thah19974rm" , "ngoc19976ib" , "huy2995tfn" , "thai199754gv" , "long19864dn" , "dinh18754bj" , "minh19865gb" , "cancelolip" , "silvabelusconis" , "kerrianluc" , "darienehsic" , "moontake" , "hnenhie" , "blackbi" , "pinkpanther" , "crudjensje" , "alexandreben" , "wulao" , "lubu" , "traiwnhdnbe" , "reddragon" , "newcoleshbc" , "bluesea" , "alisonbect" , "musmonsu" , "ruslenbio" , "losbenny" , "tuesday" , "skynet" , "josephine" , "alexarus" , "mathausl" , "beckenbauerluck" , "unnamed" , "friday" , "supermario" , "mrsupertrong" , "napoleonbonapat" , "piosvieni" , "amanda" , "wungtab" , "athonyadam" , "jovannibecker" , "kingmax" , "tuoilol" , "ngoducbinh" , "nguyenduccong" , "nguyentuananh" , "nguyencongtru" , "shopiness" , "paypalvn" , "presearch" , "bastiantom" , "claudemoore" , "ponicronme" , "qiujzhensi" , "binhtrong" , "phuninh" , "yhangens" , "canbreakno2" , "channel" , "buffallo" , "fancesco" , "alexandron" , "smush" , "tami" , "warrenn" , "carlos" , "samcu" , "tronglu" , "waves" , "firmware" , "barrack" , "natasha" , "doyen" , "alistar" , "arkania" , "xpanther" , "jindo" , "minerk" , "ducngo" , "ngoctuan" , "crystalfive" , "qianling" , "smalling" , "truongthiendi" , "longgines" , "buddy" , "cuccut" , "halongbay" , "gigabyte" , "philjones" , "bluestacks" , "economy" , "north" , "royal" , "samngoclinh" , "resetlife" , "katana" , "layer2" , "updateunnamed" , "poldolsky" , "origin" , "commercials" , "theempire" , "lucio" , "jeffberros" , "drosso" , "claudio" , "maldini" , "thanhcong" , "newbiemember" , "macover" , "benzema" , "kakakaka" , "ianwright" , "giles" , "jewelry"];
+        var listFL=listUser;
         setTimeout(function() {
-            if(document.getElementsByClassName("css-1hyjmw1 eeh4f1v0")[0].innerText!="5 TAKI" || document.getElementsByClassName("css-1hyjmw1 eeh4f1v0")[0].innerText!="10 TAKI"){
-                if (window.location.href=="https://taki.app/home/") {
-                    setTimeout(function() {
-                        var checkCaptcha = setInterval(function() {
-                            if(document.getElementById("modal-root").innerText==""){
-                                clearInterval(checkCaptcha);
-                                console.log("click top");
-                                document.getElementsByClassName("css-uk8pth eno6ygk0")[0].click();
-                                setTimeout(function() {
-                                    window.location.href="https://taki.app/wallet/";
-                                }, 5000);
-                            }
-                        }, 2000);
-                    }, 5000);
-                }
-                else if(window.location.href=="https://taki.app/wallet/"){
-                    setTimeout(function() {
-                        window.location.href="https://taki.app/wallet/?staking=true";
-                    }, 5000);
-
-                }
-                else if(window.location.href=="https://taki.app/wallet/?staking=true"){
-                    setTimeout(function() {
-                        window.location.href="https://taki.app"+document.getElementsByClassName("css-17orb6k ej2twmx20")[2].getAttribute("href");
-                    }, 5000);
-                }
-                else if(window.location.href=="https://taki.app"+document.getElementsByClassName("css-17orb6k ej2twmx20")[2].getAttribute("href")){
-                    setTimeout(function() {
-                        console.log("share");
-                        document.getElementsByClassName("css-d7m6vi e56mmy00")[0].click();
-                        setTimeout(function() {
-                            window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                        }, 8000);
-                    }, 5000);
-                }
-                else if(window.location.href.includes("https://taki.app/u/")){
-                    setTimeout(function() {
-                        if( document.getElementsByClassName("CircularProgressbar-text")[0].innerHTML=="3/5"){
-                            console.log("content");
-                            document.getElementsByClassName("css-uk8pth eno6ygk0")[0].click();
-                            setTimeout(function() {
-                                if(document.getElementsByClassName("css-2k2qix e15ggqxc4").length > 0){
-                                    document.getElementsByClassName("css-2k2qix e15ggqxc4")[0].click();
-                                    setTimeout(function() {
-                                        window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                                    }, 5000);
-                                }
-                                else{
-                                    window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                                }
-                            }, 3000);
-                        }
-                        else{
-                            setTimeout(function() {
-                                if(document.getElementsByClassName("css-1f5xamu e56mmy09").length == 1 && document.getElementsByClassName("css-eeid7l e15ggqxc9")[0].innerText == "Following"){
-                                    console.log("da fl");
-                                    document.getElementsByClassName("css-eeid7l e15ggqxc9")[0].click();
-                                    setTimeout(function() {
-                                        if(document.getElementsByClassName("css-sypkxk e15ggqxc9").length > 0){
-                                            //window.document.querySelectorAll("body > #modal-root .css-akdqam.e5k0zht0 button.css-1bd7jm8.e15ggqxc9")[0].click();
-                                            document.getElementsByClassName("css-sypkxk e15ggqxc9")[0].click();
-                                            var checkStatus = setInterval(function() {
-                                                console.log(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText);
-                                                if(window.document.querySelectorAll("body > div.css-myk9g6 ec6v7f3")[0].innerText!=""){
-                                                    clearInterval(checkStatus);
-                                                    window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                                                }
-                                            }, 1000);
-                                        }
-                                        else{
-                                            window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                                        }
-                                    }, 3000);
-                                }
-                                else if(document.getElementsByClassName("css-1f5xamu e56mmy09").length == 0 && document.getElementsByClassName("css-eeid7l e15ggqxc9")[0].innerText == "Follow"){
-                                    console.log("chua fl");
-                                    document.getElementsByClassName("css-eeid7l e15ggqxc9")[0].click();
-                                    var checkStatus = setInterval(function() {
-                                        console.log(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText);
-                                        if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText!=""){
-                                            clearInterval(checkStatus);
-                                            //if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText.includes("started")){
-
-                                            window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-
-                                        }
-
-                                    }, 1000);
-                                }
-                                else {
-                                    window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                                }
-                            }, 10000);
-                        }
-
-                    }, 5000);
-
-
-                }
-            }
-            else {
+            if(document.getElementsByClassName("css-1hyjmw1 eeh4f1v0")[0].innerText=="5 TAKI" || document.getElementsByClassName("css-1hyjmw1 eeh4f1v0")[0].innerText=="10 TAKI"){
                 console.log("hoan thanh hom nay");
             }
+            else {
+                var checkCaptcha = setInterval(function() {
+                    if(document.getElementById("modal-root").innerText==""){
+                        clearInterval(checkCaptcha);
+                        if (window.location.href=="https://taki.app/home/") {
+                            console.log("click top");
+                            document.getElementsByClassName("css-uk8pth eno6ygk0")[0].click();
+                            setTimeout(function() {
+                                window.location.href="https://taki.app/wallet/";
+                            }, 5000);
+                        }
+                        else if(window.location.href=="https://taki.app/wallet/"){
+                            window.location.href="https://taki.app/wallet/?staking=true";
 
-        }, 10000);
+                        }
+                        else if(window.location.href=="https://taki.app/wallet/?staking=true"){
+                            window.location.href="https://taki.app"+document.getElementsByClassName("css-17orb6k ej2twmx20")[2].getAttribute("href");
+                        }
+                        else if(window.location.href=="https://taki.app"+document.getElementsByClassName("css-17orb6k ej2twmx20")[2].getAttribute("href")){
+                            console.log("share");
+                            document.getElementsByClassName("css-d7m6vi e56mmy00")[0].click();
+                            setTimeout(function() {
+                                window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
+                            }, 8000);
+                        }
+                        else if(window.location.href.includes("https://taki.app/u/")){
+                            if(document.getElementsByClassName("CircularProgressbar-text")[0].innerHTML=="3/5" && parseFloat(document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0]) > 3){
+                                console.log("content");
+                                document.getElementsByClassName("css-uk8pth eno6ygk0")[0].click();
+                                setTimeout(function() {
+                                    var slTim=document.getElementsByClassName("css-2k2qix e15ggqxc4").length;
+                                    if(slTim > 0){
+                                        document.getElementsByClassName("css-2k2qix e15ggqxc4")[Math.floor(Math.random() * slTim)].click();
+                                        setTimeout(function() {
+                                            window.location.href="https://taki.app/u/"+listFL[Math.floor(Math.random() * listFL.length)]+"/";
+                                        }, 15000);
+                                    }
+                                    else{
+                                        window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
+                                    }
+                                }, 3000);
+                            }
+                            else{
+                                setTimeout(function() {
+                                    if(document.getElementsByClassName("CircularProgressbar-text")[0].innerHTML=="4/5"){
+                                        if(document.getElementsByClassName("css-1f5xamu e56mmy09").length == 1 && document.getElementsByClassName("css-eeid7l e15ggqxc9")[0].innerText == "Following"){
+                                            console.log("da fl");
+                                            document.getElementsByClassName("css-eeid7l e15ggqxc9")[0].click();
+                                            setTimeout(function() {
+                                                if(document.getElementsByClassName("css-sypkxk e15ggqxc9").length > 0){
+                                                    //window.document.querySelectorAll("body > #modal-root .css-akdqam.e5k0zht0 button.css-1bd7jm8.e15ggqxc9")[0].click();
+                                                    document.getElementsByClassName("css-sypkxk e15ggqxc9")[0].click();
+                                                    var checkStatus = setInterval(function() {
+                                                        console.log(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText);
+                                                        if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText!=""){
+                                                            clearInterval(checkStatus);
+                                                            window.location.href="https://taki.app/u/"+listFL[Math.floor(Math.random() * listFL.length)]+"/";
+                                                        }
+                                                    }, 1000);
+                                                }
+                                                else{
+                                                    window.location.href="https://taki.app/u/"+listFL[Math.floor(Math.random() * listFL.length)]+"/";
+                                                }
+                                            }, 3000);
+                                        }
+                                        else if(document.getElementsByClassName("css-1f5xamu e56mmy09").length == 0 && document.getElementsByClassName("css-eeid7l e15ggqxc9")[0].innerText == "Follow"){
+                                            console.log("chua fl");
+                                            document.getElementsByClassName("css-eeid7l e15ggqxc9")[0].click();
+                                            var checkStatus = setInterval(function() {
+                                                console.log(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText);
+                                                if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText!=""){
+                                                    clearInterval(checkStatus);
+                                                    //if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText.includes("started")){
+
+                                                    window.location.href="https://taki.app/u/"+listFL[Math.floor(Math.random() * listFL.length)]+"/";
+
+                                                }
+
+                                            }, 1000);
+                                        }
+                                        else {
+                                            window.location.href="https://taki.app/u/"+listFL[Math.floor(Math.random() * listFL.length)]+"/";
+                                        }
+                                    }
+                                    else{
+                                        window.location.href="https://taki.app/u/"+listFL[Math.floor(Math.random() * listFL.length)]+"/";
+                                    }
+                                }, 10000);
+                            }
+
+                        }
+                    }
+                }, 2000);
+
+            }
+
+        }, 15000);
     }catch(e){
         location.reload();
     }
