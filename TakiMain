@@ -1,13 +1,142 @@
+//Star data ------------------------------------------------------------------------------------------------------------------------------------------
+var db,key,today,dd,mm,yyyy;
+today = new Date();
+dd = String(today.getUTCDate()).padStart(2, '0');
+mm = String(today.getUTCMonth() + 1).padStart(2, '0'); //January is 0!
+yyyy = today.getUTCFullYear();
+
+function InitializeFirebase() {
+    const firebaseConfig = {
+        apiKey: "AIzaSyCVzgTKq4ogyrC-oQZY7aTmJ5GKGOm7tog",
+        authDomain: "taki-thai.firebaseapp.com",
+        databaseURL: "https://taki-thai-default-rtdb.firebaseio.com",
+        projectId: "taki-thai",
+        storageBucket: "taki-thai.appspot.com",
+        messagingSenderId: "855573518235",
+        appId: "1:855573518235:web:289c10e9adfcbd6e31333e"
+    };
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    db= app.database();
+}
+//End data ------------------------------------------------------------------------------------------------------------------------------------------
+
+//Star control ------------------------------------------------------------------------------------------------------------------------------------------
+var divMain;
+function AddKeyUser(){
+    var divKeyUser,lbKeyUser,intKeyUser;
+    divKeyUser = window.document.createElement('div');
+
+    lbKeyUser=window.document.createElement('label');
+    lbKeyUser.innerText="Key User";
+    lbKeyUser.setAttribute('style','padding-right: 10px;');
+
+    intKeyUser = window.document.createElement('input');
+    intKeyUser.id = "KeyUser";
+    intKeyUser.value=localStorage.getItem('KeyUser');
+    intKeyUser.setAttribute('style','color: black;padding: 2px;');
+
+    divKeyUser.appendChild(lbKeyUser);
+    divKeyUser.appendChild(intKeyUser);
+    divMain.appendChild(divKeyUser);
+
+    intKeyUser.addEventListener("change", function(){
+        localStorage.setItem('KeyUser', intKeyUser.value);
+    });
+}
+function AddControl(){
+    divMain = window.document.createElement('div');
+    divMain.id="divMain";
+    divMain.setAttribute('style','color: #ffbe00;position: fixed;top: 0px;z-index: 999999999;font-weight: bold;background-color: black; padding: 10px;');
+
+    window.document.querySelector('body').appendChild(divMain);
+    AddKeyUser();
+
+}
+//End control ------------------------------------------------------------------------------------------------------------------------------------------
 (function() {
     setTimeout(function() {
         location.reload();
-    }, 60000);
+    }, 120000);
     try{
-        var listUser=["tuoiconlon" , "brunamaegan071" , "hoangnam" , "dangthanhwun" , "nguyenvnkieu" , "oppofine" , "eltonjohn" , "pawdigital" , "ditmemay" , "particiajerrold" , "zoilalucilla" , "marlysmarcelene" , "monicabrad" , "lettiejen265" , "lliebrendan" , "arronmic" , "alecjennine" , "kieraignacia" , "taulas" , "sherilynvera" , "winstonivory" , "jamikaamberly" , "odeliaalbert" , "lashawndatresa" , "nilawinfred" , "crystlemax" , "ushaaubrey583" , "nanahas" , "nerissarosalyn" , "ebonienicky" , "mariawillis" , "angilacarli" , "kayladalila" , "joannesydney" , "leofrankie" , "marvismarlin" , "emmyverlene" , "shennana" , "enidalda56" , "megjacki36" , "dominquesherlyn" , "cherlyobdulia" , "kayleenisaias" , "danemayra" , "gwennotto6074" , "wilfredomillard" , "roselleorval" ,"pattiebeth" , "citizenpro" , "paigesang12" , "santinarickie42" , "nenaozella30" , "michelkiera51" , "donnacyrus87" , "orvalkalyn85" , "jeseniahillary1" , "thomasmathilda2" , "estelleluke20" , "leonardleon" , "tabicabinet" , "pkertfcexc" , "cocacola" , "pepsi" , "hllegend" , "hlshapphire" , "caotien" , "longtu" , "newmen" , "dareu" , "chautinhtri" , "chaunhuanphat" , "doandu" , "tieuphong" , "doanchibinh" , "tieulongnu" , "samsungkr" , "iphoneus" , "mudarkwirard" , "mumagical" , "northstream" , "southstream" , "clarkkent" , "cowaymasai" , "luubi" , "taoaman" , "bachan" , "namhan" , "samsungs21" , "samsungs22" , "yellow" , "thered" , "theblack" , "fulljaw" , "masteryi" , "leesin" , "tokudavn" , "ozawavn" , "sgresgwq" , "mywersaewr" , "rawdsgyuifg" , "puyrwge" , "wesagrtsertew" , "nbmefdsafwe" , "sadewsdweqsdaf" , "ytuiorgfew" , "redfgweqt" , "tsfweaswaw" , "tyrkgfdweqt" , "dbvewbaywe" , "resdwfwcresdf" , "dfshrtjdgfhrt" , "mityerfs" , "grdwagrgbre" , "vsdgvwegv" , "satrfdhw" , "fwtrfrhqfsdg" , "wedfhgtdfuj" , "vfrsdawawq" , "hrawsvrevy" , "zfefdret" , "vawfacergv" , "greasdgwe" , "hsatewsa" , "ceasfggr" , "rysfsrwe" , "szgweghq" , "qsagrewhsd" , "cawfewrt" , "verwghyrtngf" , "ewgasgqqas" , "vregyhdshry" , "vwgvsdate" , "hrefcifterj" , "klkendhgr" , "brtjwaeyj" , "rehfdsherwh" , "hgoiyuwesd" , "vciygler" , "yowqeshtw" , "tdfqwsahtwt" , "yrtewqet" , "vweqgsrhsdh" , "bytrejwqtwq" , "rtoikhgkwe" , "iuyouyjergtre" , "gfjnreger" , "vresfqwaqwagtqw" , "penicilin" , "uipuyerswe" , "medefbeytsdvre" , "mytdfweqsxz" , "yurcgrmuife" , "qwsaesdfewr" , "cuamien" , "454901" , "nicolasnexev" , "lastaccs" , "tookslnahnesvw" , "wernsdiwejht" , "maxximolopez" , "orioncho" , "butterflyfqe" , "nakashihita" , "hioenshimawecw" , "iweruyshjew" , "mniuyerwx" , "nbgrfuoier" , "thgowwqefds" , "ljhsdagnjgfn" , "myswdfvweqda" , "uyweqdshtdf" , "hlgjewfdrew" , "utyuyweqjtafwe" , "bfgkytdser" , "hmfdewhey" , "grejkgferw" , "rtgejunbiyuewr" , "bvfdjtyresdweq" , "tgwqecxewtyfd" , "htrewgfweqtyryu" , "jhyoluyervsdwe" , "mtqwdsreufger" , "mtyasfqwxsfewtr" , "mryewqfscvyui" , "tyurdsagwqqwy" , "ytuiorwqedfset" , "trweqqwtgeere" , "tywectrycvtr" , "qwezfweasfew" , "trjewrsdqt" , "tyhgwexwrq" , "pretywfqy" , "etbrtebtre" , "pyweqfdserw" , "dsfwesfwesdq" , "ytouweqwesdfg" , "ryejfdeqwsdfewr" , "btresdfwsdfewew" , "tfgewdfwqztgqq" , "qewxchgertuwyvc" , "nrtysdweqxzrwe" , "pierwtdswqasew" , "muyweqschrey" , "myuwsfwexcewt" , "prtyfdweqbver" , "uywqsadgqy" , "ypurwrethfhgeq" , "vcbersersdt" , "mytdsvwesxe" , "iuprewewdsv" , "putrqwcsxrewt" , "preqwdsfwet" , "myevcdweqz" , "qwrsfdewaeage" , "pnrtsafqws" , "rewqerrte" , "gtiywqfdsferw" , "rtdfqwedsgrew" , "mtyrvewtrewt" , "mytwefdsudfbre" , "mrtsafdwzxewqt" , "qrafqwasfetas" , "tyuqwdsyersda" , "vcweweqrqwrasf" , "twtedgfreqygsad" , "mqresdgftrsfdgr" , "bntrexcwqasdf" , "uyohegbdfher" , "zrsaafrwqasf" , "mrtdcversdrt" , "pqstvrasre" , "lrnhsqwkhreq" , "myuwefsdewy" , "mtyrwretrsdre" , "osiwfjyrg" , "tyewxsfewaswrq" , "trananhthai" , "tuqqfdryugf" , "tranvanthiem" , "brefdweqew" , "triweqsdar" , "qpwouyvnrew" , "bgdfesaqd" , "btrwqwdsaw ","bulahcharlott" , "verdellchau" , "daronfreddy" , "latoyaetta" , "christenelinor" , "roccoodette" , "thanhas" , "sharondami" , "odellemmy" , "merlekayla" , "georgeannjim" , "frankvanda" , "camipia6351" , "jeanenena" , "lorenzasandi" , "steviekirby" , "adrienelarita" , "shelbyfloren" , "thomasadrien" , "belvaleonore" , "kacicora" , "elmerjack28" , "christinater" , "millardluella" , "ruthanneniesha" , "georginehang" , "danjanee21" , "vivanermelinda" , "joaquinmary" , "barbienieves" , "llaaundrea" , "onalonnie" , "phanmanh" , "cailonma" , "pokqweyuh" , "eladianathalie" , "wytwegerqw" , "eladianathalie" , "blessss5" , "eddaterra" , "darleenmira1" , "charlsiekatie" , "aftoncarrol527" , "reynarah6357" , "nikolejin605" , "tenishalesley62" , "tinechu1503" , "jamisonalex749" , "ranti110" , "resusato" , "zuleal" , "snoopy" , "areaping" , "afmadimanrif" , "carrillo" , "jessemax" , "matthewjen" , "allisonkile" , "constancelw" , "marthacristal" , "viviachris" , "rompromp" , "maphematics" , "ghostrider" , "vendordestiny" , "fatihcimen" , "ingiahndq" , "kunglao" , "takken" , "athurking" , "donhaque" , "giakiet" , "taxi1" , "taxi2" , "carriberian1" , "carriberian2" , "picolo" , "kakarot" , "dragonnamek" , "dragonearth" , "premierleague" , "bundesliga" , "sonyericson" , "nokian92" , "cyclops" , "mutare" , "hydra" , "subwaysurfers" , "lamythan" , "tieuthany" , "coinlist" ,"detective" , "tigersecurity" , "hotbit" , "louisvan" , "tieuthantien" , "caslonehsn" , "birunginanaj" , "hernangomez" , "myrtlesarrosa" , "samousluzna" , "subaruasis" , "michealchu" , "devianatumakhu" , "ashfarnes" , "amobyngnie" , "perfectworl" , "devianatumakhu" , "oupaertdq" , "ropaamaendhs" , "nawarajbista" , "augustic" , "luxewmborfa" , "anhbui" , "tangdauthi" , "wenderbremen" , "ttenergyne" , "crushwomen" , "nuwjnshegndfg" , "mingchikuo" , "lacuadra" , "lasandra" , "enricques" , "soldadoscs" , "pasarbeasar" , "comedyoffficial" , "mrkalavera" , "canonimaging" , "makanterusss" , "ikatebaptist" , "agatha41li","airdrop1" , "airdrop2" , "airdrop3" , "airdrop4" , "airdrop5" , "airdrop6" , "airdrop7" , "airdrop8" , "blacknbhen" , "457hgfdew" , "63fefew432" , "32fdasf35" , "544sgr443" , "r324e1r" , "34643fgdger" , "5467gbdf" , "3443fdger" , "5fsdf43" , "35sdfgre" , "345dfewt" , "thuan2884" , "thanhyunf18" , "nam19755ch" , "hung1954" , "chinh1997" , "cuong1996" , "tling187" , "2343wfwe" , "nghia199" , "kan1995" , "thanh198" , "thai198" , "hung19875mk" , "ngoctrinh34" , "thanh199864dn" , "huong199" , "tam1997" , "dung19975fcy" , "hubg19864mk" , "ngueyt18864fv" , "tuan3877" , "hien19875rnj" , "19864mk" , "kam19964fg" , "18864fn" , "198754dcj" , "lam19954vh" , "thah19974rm" , "ngoc19976ib" , "huy2995tfn" , "thai199754gv" , "long19864dn" , "dinh18754bj" , "minh19865gb" , "cancelolip" , "silvabelusconis" , "kerrianluc" , "darienehsic" , "moontake" , "hnenhie" , "blackbi" , "pinkpanther" , "crudjensje" , "alexandreben" , "wulao" , "lubu" , "traiwnhdnbe" , "reddragon" , "newcoleshbc" , "bluesea" , "alisonbect" , "musmonsu" , "ruslenbio" , "losbenny" , "tuesday" , "skynet" , "josephine" , "alexarus" , "mathausl" , "beckenbauerluck" , "unnamed" , "friday" , "supermario" , "mrsupertrong" , "napoleonbonapat" , "piosvieni" , "amanda" , "wungtab" , "athonyadam" , "jovannibecker" , "kingmax" , "tuoilol" , "ngoducbinh" , "nguyenduccong" , "nguyentuananh" , "nguyencongtru" , "shopiness" , "paypalvn" , "presearch" , "bastiantom" , "claudemoore" , "ponicronme" , "qiujzhensi" , "binhtrong" , "phuninh" , "yhangens" , "canbreakno2" , "channel" , "buffallo" , "fancesco" , "alexandron" , "smush" , "tami" , "warrenn" , "carlos" , "samcu" , "tronglu" , "waves" , "firmware" , "barrack" , "natasha" , "doyen" , "alistar" , "arkania" , "xpanther" , "jindo" , "minerk" , "ducngo" , "ngoctuan" , "crystalfive" , "qianling" , "smalling" , "truongthiendi" , "longgines" , "buddy" , "cuccut" , "halongbay" , "gigabyte" , "philjones" , "bluestacks" , "economy" , "north" , "royal" , "samngoclinh" , "resetlife" , "katana" , "layer2" , "updateunnamed" , "poldolsky" , "origin" , "commercials" , "theempire" , "lucio" , "jeffberros" , "drosso" , "claudio" , "maldini" , "thanhcong" , "newbiemember" , "macover" , "benzema" , "kakakaka" , "ianwright" , "giles" , "jewelry"];
+        var UserName = "tuoiconlon,brunamaegan071,hoangnam,dangthanhwun,nguyenvnkieu,oppofine,eltonjohn,pawdigital,ditmemay,particiajerrold,zoilalucilla,marlysmarcelene,monicabrad,lettiejen265";
+        UserName = UserName + ",lliebrendan,arronmic,alecjennine,kieraignacia,taulas,sherilynvera,winstonivory,jamikaamberly,odeliaalbert,lashawndatresa,nilawinfred,crystlemax,ushaaubrey583,nanahas";
+        UserName = UserName + ",nerissarosalyn,ebonienicky,mariawillis,angilacarli,kayladalila,joannesydney,leofrankie,marvismarlin,emmyverlene,shennana,enidalda56,megjacki36,dominquesherlyn,cherlyobdulia";
+        UserName = UserName + ",kayleenisaias,danemayra,gwennotto6074,wilfredomillard,roselleorval,pattiebeth,citizenpro,paigesang12,santinarickie42,nenaozella30,michelkiera51,donnacyrus87,orvalkalyn85";
+        UserName = UserName + ",jeseniahillary1,thomasmathilda2,estelleluke20,leonardleon,tabicabinet,pkertfcexc,cocacola,pepsi,hllegend,hlshapphire,caotien,longtu,newmen,dareu,chautinhtri,chaunhuanphat";
+        UserName = UserName + ",doandu,tieuphong,doanchibinh,tieulongnu,samsungkr,iphoneus,mudarkwirard,mumagical,northstream,southstream,clarkkent,cowaymasai,luubi,taoaman,bachan,namhan,samsungs21";
+        UserName = UserName + ",samsungs22,yellow,thered,theblack,fulljaw,masteryi,leesin,tokudavn,ozawavn,sgresgwq,mywersaewr,rawdsgyuifg,puyrwge,wesagrtsertew,nbmefdsafwe,sadewsdweqsdaf,ytuiorgfew";
+        UserName = UserName + ",redfgweqt,tsfweaswaw,tyrkgfdweqt,dbvewbaywe,resdwfwcresdf,dfshrtjdgfhrt,mityerfs,grdwagrgbre,vsdgvwegv,satrfdhw,fwtrfrhqfsdg,wedfhgtdfuj,vfrsdawawq,hrawsvrevy,zfefdret";
+        UserName = UserName + ",vawfacergv,greasdgwe,hsatewsa,ceasfggr,rysfsrwe,szgweghq,qsagrewhsd,cawfewrt,verwghyrtngf,ewgasgqqas,vregyhdshry,vwgvsdate,hrefcifterj,klkendhgr,brtjwaeyj,rehfdsherwh";
+        UserName = UserName + ",hgoiyuwesd,vciygler,yowqeshtw,tdfqwsahtwt,yrtewqet,vweqgsrhsdh,bytrejwqtwq,rtoikhgkwe,iuyouyjergtre,gfjnreger,vresfqwaqwagtqw,penicilin,uipuyerswe,medefbeytsdvre,mytdfweqsxz";
+        UserName = UserName + ",yurcgrmuife,qwsaesdfewr,cuamien,454901,nicolasnexev,lastaccs,tookslnahnesvw,wernsdiwejht,maxximolopez,orioncho,butterflyfqe,nakashihita,hioenshimawecw,iweruyshjew,mniuyerwx";
+        UserName = UserName + ",nbgrfuoier,thgowwqefds,ljhsdagnjgfn,myswdfvweqda,uyweqdshtdf,hlgjewfdrew,utyuyweqjtafwe,bfgkytdser,hmfdewhey,grejkgferw,rtgejunbiyuewr,bvfdjtyresdweq,tgwqecxewtyfd";
+        UserName = UserName + ",htrewgfweqtyryu,jhyoluyervsdwe,mtqwdsreufger,mtyasfqwxsfewtr,mryewqfscvyui,tyurdsagwqqwy,ytuiorwqedfset,trweqqwtgeere,tywectrycvtr,qwezfweasfew,trjewrsdqt,tyhgwexwrq";
+        UserName = UserName + ",pretywfqy,etbrtebtre,pyweqfdserw,dsfwesfwesdq,ytouweqwesdfg,ryejfdeqwsdfewr,btresdfwsdfewew,tfgewdfwqztgqq,qewxchgertuwyvc,nrtysdweqxzrwe,pierwtdswqasew,muyweqschrey";
+        UserName = UserName + ",myuwsfwexcewt,prtyfdweqbver,uywqsadgqy,ypurwrethfhgeq,vcbersersdt,mytdsvwesxe,iuprewewdsv,putrqwcsxrewt,preqwdsfwet,myevcdweqz,qwrsfdewaeage,pnrtsafqws,rewqerrte,gtiywqfdsferw";
+        UserName = UserName + ",rtdfqwedsgrew,mtyrvewtrewt,mytwefdsudfbre,mrtsafdwzxewqt,qrafqwasfetas,tyuqwdsyersda,vcweweqrqwrasf,twtedgfreqygsad,mqresdgftrsfdgr,bntrexcwqasdf,uyohegbdfher,zrsaafrwqasf";
+        UserName = UserName + ",mrtdcversdrt,pqstvrasre,lrnhsqwkhreq,myuwefsdewy,mtyrwretrsdre,osiwfjyrg,tyewxsfewaswrq,trananhthai,tuqqfdryugf,tranvanthiem,brefdweqew,triweqsdar,qpwouyvnrew,bgdfesaqd";
+        UserName = UserName + ",btrwqwdsaw,bulahcharlott,verdellchau,daronfreddy,latoyaetta,christenelinor,roccoodette,thanhas,sharondami,odellemmy,merlekayla,georgeannjim,frankvanda,camipia6351,jeanenena";
+        UserName = UserName + ",lorenzasandi,steviekirby,adrienelarita,shelbyfloren,thomasadrien,belvaleonore,kacicora,elmerjack28,christinater,millardluella,ruthanneniesha,georginehang,danjanee21";
+        UserName = UserName + ",vivanermelinda,joaquinmary,barbienieves,llaaundrea,onalonnie,phanmanh,cailonma,pokqweyuh,eladianathalie,wytwegerqw,eladianathalie,blessss5,eddaterra,darleenmira1";
+        UserName = UserName + ",charlsiekatie,aftoncarrol527,reynarah6357,nikolejin605,tenishalesley62,tinechu1503,jamisonalex749,ranti110,resusato,zuleal,snoopy,areaping,afmadimanrif,carrillo";
+        UserName = UserName + ",jessemax,matthewjen,allisonkile,constancelw,marthacristal,viviachris,rompromp,maphematics,ghostrider,vendordestiny,fatihcimen,ingiahndq,kunglao,takken,athurking";
+        UserName = UserName + ",donhaque,giakiet,taxi1,taxi2,carriberian1,carriberian2,picolo,kakarot,dragonnamek,dragonearth,premierleague,bundesliga,sonyericson,nokian92,cyclops,mutare,hydra";
+        UserName = UserName + ",subwaysurfers,lamythan,tieuthany,coinlist,detective,tigersecurity,hotbit,louisvan,tieuthantien,caslonehsn,birunginanaj,hernangomez,myrtlesarrosa,samousluzna,subaruasis";
+        UserName = UserName + ",michealchu,devianatumakhu,ashfarnes,amobyngnie,perfectworl,devianatumakhu,oupaertdq,ropaamaendhs,nawarajbista,augustic,luxewmborfa,anhbui,tangdauthi,wenderbremen";
+        UserName = UserName + ",ttenergyne,crushwomen,nuwjnshegndfg,mingchikuo,lacuadra,lasandra,enricques,soldadoscs,pasarbeasar,comedyoffficial,mrkalavera,canonimaging,makanterusss,ikatebaptist";
+        UserName = UserName + ",agatha41li,airdrop1,airdrop2,airdrop3,airdrop4,airdrop5,airdrop6,airdrop7,airdrop8,blacknbhen,457hgfdew,63fefew432,32fdasf35,544sgr443,r324e1r,34643fgdger,5467gbdf";
+        UserName = UserName + ",3443fdger,5fsdf43,35sdfgre,345dfewt,thuan2884,thanhyunf18,nam19755ch,hung1954,chinh1997,cuong1996,tling187,2343wfwe,nghia199,kan1995,thanh198,thai198,hung19875mk";
+        UserName = UserName + ",ngoctrinh34,thanh199864dn,huong199,tam1997,dung19975fcy,hubg19864mk,ngueyt18864fv,tuan3877,hien19875rnj,19864mk,kam19964fg,18864fn,198754dcj,lam19954vh,thah19974rm";
+        UserName = UserName + ",ngoc19976ib,huy2995tfn,thai199754gv,long19864dn,dinh18754bj,minh19865gb,cancelolip,silvabelusconis,kerrianluc,darienehsic,moontake,hnenhie,blackbi,pinkpanther,crudjensje";
+        UserName = UserName + ",alexandreben,wulao,lubu,traiwnhdnbe,reddragon,newcoleshbc,bluesea,alisonbect,musmonsu,ruslenbio,losbenny,tuesday,skynet,josephine,alexarus,mathausl,beckenbauerluck";
+        UserName = UserName + ",unnamed,friday,supermario,mrsupertrong,napoleonbonapat,piosvieni,amanda,wungtab,athonyadam,jovannibecker,kingmax,tuoilol,ngoducbinh,nguyenduccong,nguyentuananh,nguyencongtru";
+        UserName = UserName + ",shopiness,paypalvn,presearch,bastiantom,claudemoore,ponicronme,qiujzhensi,binhtrong,phuninh,yhangens,canbreakno2,channel,buffallo,fancesco,alexandron,smush,tami,warrenn";
+        UserName = UserName + ",carlos,samcu,tronglu,waves,firmware,barrack,natasha,doyen,alistar,arkania,xpanther,jindo,minerk,ducngo,ngoctuan,crystalfive,qianling,smalling,truongthiendi,longgines,buddy";
+        UserName = UserName + ",cuccut,halongbay,gigabyte,philjones,bluestacks,economy,north,royal,samngoclinh,resetlife,katana,layer2,updateunnamed,poldolsky,origin,commercials,theempire,lucio,jeffberros";
+        UserName = UserName + ",drosso,claudio,maldini,thanhcong,newbiemember,macover,benzema,kakakaka,ianwright,giles,jewelry,nbewdewr,bezmozg,aloopns,sejuanis,amoxicilin,tutgwefwe,ytfvwqgwe,trkjwreqwd";
+        UserName = UserName + ",rewqfdsyuhs,yprtwnqe,wudfhtrerj,hgmtsdger,vjyekwjt,ytriwefewqy,reutwqgwrqyt,dijtyrfgytre,ytruioweqtew,xjtyfdbrte,ewrygfduiyio,xzchrewhsr,nrtwmnfdgnwrte,jlkerhgre,uyoewrbb";
+        UserName = UserName + ",yukergsdfgre,sdbgeuriw,verwycgtr,brtwehndfer,rouerwgr,ytifgrteur,rtyinwer,nytkjrtfert,vdjrtejfgj,yukrjnwdf,bntrnjdfsjer,eruijtherw,vewrqgdsg,verygfdher,yroweqgds,vreqyhgfdh";
+        UserName = UserName + ",rotwhre,vwegtdshttre,yuutherhfdh,fwetdast,nrtecxfew,sdhrehberh,verwysdhgtwj,jretfghytr,ngtysdvwe,vewyhfhre,yuobwerqg,verwhydfqsa,bvrtewqa,brtydsrtert,ytrrtdhreywer,yrteugfidwtre";
+        UserName = UserName + ",reufghytfgrty,pryfdrywqt,twkrkjwdfyy,ilewqtwefdy,reugfdhtreyh,ewrtqwdcvhtrey,trwuhtrweyt,thhbersdagwqet,yurojtjfgyu,rewqghdsde,eryjgfrteyutr,reujhgtreyutr,rtugfnrtyeutyu";
+        UserName = UserName + ",yewetdg5gf,rtwhjfdhrewy,fcwertdsy,jrthfgdhtryw,tyikgffweqrter,rejjdfgherwy,tjretdftreg,rtyukihjmgfhyt,vkygdfgdcb,yutigjyery,retgfdhrtqwrds,rtdfherwtdf,cewastfwqg,fgncvrstgr";
+        UserName = UserName + ",ytfdyuteru,rthdfhersxwe,yowedresdr,poodleslion,ewrfdgerw,ytjfgjrtsar,vbfytfwwert,ertyjfgjhrte,dfyhtreyfd,ymerherbdfy,mnhewbasdgr,eryxdtqwf,ydfgerwye,vrecxrqdr,qetctgyhfy";
+        UserName = UserName + ",eytrjfgrtwedfuj,txcweszw,yrtejfdghew,rtwjnfderte,yurkcweqsd,jhtedferw,ypvwesa,bqgewqtt,uiyoyteqqt,trfsdtweq,qwerfdsyhst,yutewrwqtsd,yuowesdfwq,tyrkjfgnbewh,eyjketwqw";
+        UserName = UserName + ",tiktyqtrweyr,ytwesdweq,hryreyewry,ytedfswey,urergewrsw,rteubertwt,yogretser,reyhwetre,rtegfdhwy,tyjwtrede,twerhasurt,wqrqyeyt,rtuherwst,reujtrdsgre,rtewrdferder";
+        UserName = UserName + ",yrteijdfwetqw,shererasrsd,pyiutewqwr,rtdfhbreqy,trudfwqtwe,trwuwer,ruiewgteww,fgrdherwqw,jhrtyejfdghtr,yeirtujewy,dfhtrdryry,yeriufghreytr,dfhwqasdfew,rejfgjwtuy";
+        UserName = UserName + ",yughjuhrte,teijrtuweq,ytureerg,rtgerwuedfgtr,tyrierwtygsr,ptyrvdewrfyt,utyroytgfeyqw,ytdfgwesxgre,dsvweqate,yuoweqsdtre,ndfwydfsgre,terjdjhtwut,yrtejcwdq,grewany";
+        UserName = UserName + ",xscqsar,qfsdydhe,mrytdfetregvcew,etihgfwe6,102999,fvgfhjrtsare,htreqtwet,udfyteqweq,gehtrcxsger,fwret5et34,xztzheujw,tkfdwzwqr,xchhhhewf,242versgfwe,xcwrqghoij";
+        UserName = UserName + ",rtfghkrei,tyrdewru,qeewtsdtwesdf,hnqhegbgde,wtrehdfeyswqe,hgjytjdhr,pytewqq,oweqyqhtr,opewqtqurtf,end380,upewrwehj,pujtnte214,tpwqesdg,pertqqfe,iylkfgrty,nytedsfet";
+        UserName = UserName + ",fgjrturtu,iupnrtwqw,ntyrifghwe,righequu,kutyreqd,nuytwq6y4,rwifhrqsr,bqysatyy,mnhuengase,yeirtqifhgjyt,ckytrdfyy,turlkjneuik,goijwtsdy,400end,btrwqwdsaw,twefytigw";
+        UserName = UserName + ",ntrfdegvqw,rtdsatreqwwq,brtehfdhsrew,hkmjrethg,bvertwsdweq,nytjdfsre,vewrgvdshr,gretwhdfhr,ptewgvreyr,myemfger,ytrierwdfrewyh,linwhgfbewra,yuojhwtdfg,ujtyjetahg";
+        UserName = UserName + ",innainuha,draculamr,halcycol,ckegjynge,ericbaiden,caesargjbe,brtwesdfty,cabotopboatera,feavxzrhb,twistbaber,cowaypagoh,billythekid,wgfdtehw,feurtbeq,jtyerwqsat,yewtdsrf";
+        UserName = UserName + ",tyurikwqg,poqwptsdi,yetrikwq,ytpqtewdsavr,wrujtdfsherw,verwhdfyutek,uyerwdfy,yiutpwevewh,rieqwrntye,verqhfdtyd,ytwervcrtu,vrtwjdhqrt,nuytsdgeq,dfvjwrdsnew,temkrhweyt";
+        UserName = UserName + ",ewhdsfhetw,dfstysavery,yupretbew,rouytrgvwrq,florerialachi,angeljolisa,trngfnwtywet,lulaaccesorios,fgrtybrqwrt,fdudfgwe,szayrsehrt,fgdetfdbret,vwerthsdfahr,vreiujfwet";
+        UserName = UserName + ",ghrudsvqwer,vwqegvdsat,vertyhgsda,sreffqgre,youreqsdyre,gorebsdger,uytkjherwwte,carterboarter,salaammonhe,yireuweegt,yuukrwredser,fgdirqegsawe,troregqher,dithesagweq";
+        UserName = UserName + ",gwtwefrewqt,wherdfhwuys,delmasjewek,nayeemsameu,nrjfgdwet,htprendw,cxvewrytgzx,tyeqrgsywqe,veqrgsaret,weqydfgydfer,vwqtgsdtgew,xcuytgfrntr,vewtdtewqb,vrtufderwy";
+        UserName = UserName + ",tryerdsfvre,cdyutrywq,vewgdaerwq,mnrewhsdate,brehjnsdfa,tyhjwdrty,bvmytvwqsd,newsdxywq,ruyhqwgsd,yejfdsgewq,mefdghewr,ewjrhndfyre,ytrjdsbre,tjgwqst,xcdujfgherw,vcfdujthre";
+        UserName = UserName + ",rtyiejgher,verwhfdsgh,verwyfdviytr,verwyhsdfgwq,verqgdsg,verqhgdsagh,447828,veryuadste,bhertwhbsa,vberwhstrewy,vwerqgdsg,vrewqgsdat,tronrehsdfg,ytoujmwthgre,iuperggreg";
+        UserName = UserName + ",hnrtjhndfshre,verwyfdjuiew,yetjdfhewry,cvduywqew,vsdyhgrasere,vreqtgysartew,mhnegafgrsdr,vwqtfdgbtry,vwerqyfdhtj,fd6tregdfy,gfdughjtrey,gfdughjtrey,fgijykiwtr,wer5rgdfu";
+        UserName = UserName + ",fghurtutrut,retuwqgwg,rthdfbrewhedfe,oykyuerrey,qwrwqedfyu,vretwhhbdferw,dfndwerwdfre,sewqsdgr,vewryhredg,gerghwweqtw,vwresavrwsaqwq,uipuirtyweqds,wwedfdfre,verghdsgqwe";
+        UserName = UserName + ",verghdserhbre,rerwhfdhewyredf,ertkyrewer,ewrydfgerwyre,veryrdfhgerwy,yryfgrertyu,rtwjfdyutkmfg,ergerwytrey,etweiytwergqr,ytogfwehdfew,yrukhrtedfg,erygfdhtrgfdhtr,potyurehfgrt";
+        UserName = UserName + ",ufgerwewrt,tykfghrtwj,rtdsgeryre,rtyukerwtrew,sdgwerqysy,ytouwgvrewgb,gfdhretytr,dfberwyredf,dfgerdferyre,rtewdfbesdew,fdyutght,440941,49to53,retyifgjhdfgre,fgjnrtejfgjk";
+        UserName = UserName + ",wrjhhewdfe,hntgrnfdwer,retuydfghtr,wsijrerw,yrortuyo,hjnytfgweq,verwghrtwd,hjnytfgweq,reurwtgdre,uytertyetyu,ytiewxxmkjiu,jneyshgqs,tyrksqwfew,bwwxhjtr,ytpoydfyew,fgdifigfhtr";
+        UserName = UserName + ",cewqygdse,yurlhgmrqw,68tydftf,nrtijk76fdht,nyt125sdg,liuikytrg,kfgexgesda,kyukg54,uteruhru,ntryenfdnbt";
+        var listUser=UserName.split(',');
         var listFL=listUser;
         setTimeout(function() {
             if(document.getElementsByClassName("css-1hyjmw1 eeh4f1v0")[0].innerText=="5 TAKI" || document.getElementsByClassName("css-1hyjmw1 eeh4f1v0")[0].innerText=="10 TAKI"){
                 console.log("hoan thanh hom nay");
+                InitializeFirebase();
+                if(localStorage.getItem('KeyUser')==null ){
+                    localStorage.setItem('KeyUser', document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href").split('/')[2]);
+                }
+                key=localStorage.getItem('KeyUser');
+                db.ref('/'+yyyy+'/'+mm+'/'+dd+'/'+key).set(1);
+                db.ref('/'+yyyy+'/'+mm+'/'+dd+'_Detail/'+key).set({
+                    Taki: document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0],
+                    Point: document.getElementsByClassName("css-jzlrki e56mmy04")[0].innerText
+                });
             }
             else {
                 var checkCaptcha = setInterval(function() {
@@ -16,9 +145,15 @@
                         if (window.location.href=="https://taki.app/home/") {
                             console.log("click top");
                             document.getElementsByClassName("css-uk8pth eno6ygk0")[0].click();
+                            InitializeFirebase();
+                            if(localStorage.getItem('KeyUser')==null ){
+                                localStorage.setItem('KeyUser', document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href").split('/')[2]);
+                            }
+                            key=localStorage.getItem('KeyUser');
+                            db.ref('/'+yyyy+'/'+mm+'/'+dd+'/'+key).set(0);
                             setTimeout(function() {
                                 window.location.href="https://taki.app/wallet/";
-                            }, 5000);
+                            }, 10000);
                         }
                         else if(window.location.href=="https://taki.app/wallet/"){
                             window.location.href="https://taki.app/wallet/?staking=true";
@@ -36,7 +171,7 @@
                         }
                         else if(window.location.href.includes("https://taki.app/u/")){
                             if(document.getElementsByClassName("CircularProgressbar-text")[0].innerHTML=="3/5" && parseFloat(document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0]) > 3){
-                                console.log("content");
+                                console.log("like");
                                 document.getElementsByClassName("css-uk8pth eno6ygk0")[0].click();
                                 setTimeout(function() {
                                     var slTim=document.getElementsByClassName("css-2k2qix e15ggqxc4").length;
@@ -51,56 +186,53 @@
                                     }
                                 }, 3000);
                             }
-                            else{
-                                setTimeout(function() {
-                                    if(document.getElementsByClassName("CircularProgressbar-text")[0].innerHTML=="4/5"){
-                                        if(document.getElementsByClassName("css-1f5xamu e56mmy09").length == 1 && document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].innerText == "Following"){
-                                            console.log("da fl");
-                                            document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].click();
-                                            setTimeout(function() {
-                                                if(document.getElementsByClassName("css-sypkxk e15ggqxc9").length > 0){
-                                                    //window.document.querySelectorAll("body > #modal-root .css-akdqam.e5k0zht0 button.css-1bd7jm8.e15ggqxc9")[0].click();
-                                                    document.getElementsByClassName("css-sypkxk e15ggqxc9")[0].click();
-                                                    var checkStatus = setInterval(function() {
-                                                        console.log(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText);
-                                                        if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText!=""){
-                                                            clearInterval(checkStatus);
-                                                            window.location.href="https://taki.app/u/"+listFL[Math.floor(Math.random() * listFL.length)]+"/";
-                                                        }
-                                                    }, 1000);
-                                                }
-                                                else{
-                                                    window.location.href="https://taki.app/u/"+listFL[Math.floor(Math.random() * listFL.length)]+"/";
-                                                }
-                                            }, 3000);
-                                        }
-                                        else if(document.getElementsByClassName("css-1f5xamu e56mmy09").length == 0 && document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].innerText == "Follow"){
-                                            console.log("chua fl");
-                                            document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].click();
+                            else if(document.getElementsByClassName("CircularProgressbar-text")[0].innerHTML=="4/5"){
+                                console.log("follow");
+                                if(document.getElementsByClassName("css-1f5xamu e56mmy09").length == 1 && document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].innerText == "Following"){
+                                    console.log("da fl");
+                                    document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].click();
+                                    setTimeout(function() {
+                                        if(document.getElementsByClassName("css-1c37aw4 e15ggqxc9").length > 0){
+                                            document.getElementsByClassName("css-1c37aw4 e15ggqxc9")[0].click();
                                             var checkStatus = setInterval(function() {
                                                 console.log(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText);
                                                 if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText!=""){
                                                     clearInterval(checkStatus);
-                                                    //if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText.includes("started")){
-
                                                     window.location.href="https://taki.app/u/"+listFL[Math.floor(Math.random() * listFL.length)]+"/";
-
                                                 }
-
                                             }, 1000);
                                         }
-                                        else {
+                                        else{
                                             window.location.href="https://taki.app/u/"+listFL[Math.floor(Math.random() * listFL.length)]+"/";
                                         }
-                                    }
-                                    else{
-                                        window.location.href="https://taki.app/u/"+listFL[Math.floor(Math.random() * listFL.length)]+"/";
-                                    }
-                                }, 10000);
-                            }
+                                    }, 3000);
+                                }
+                                else if(document.getElementsByClassName("css-1f5xamu e56mmy09").length == 0 && document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].innerText == "Follow"){
+                                    console.log("chua fl");
+                                    document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].click();
+                                    var checkStatus = setInterval(function() {
+                                        console.log(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText);
+                                        if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText!=""){
+                                            clearInterval(checkStatus);
+                                            //if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText.includes("started")){
 
+                                            window.location.href="https://taki.app/u/"+listFL[Math.floor(Math.random() * listFL.length)]+"/";
+
+                                        }
+
+                                    }, 1000);
+                                }
+                                else {
+                                    window.location.href="https://taki.app/u/"+listFL[Math.floor(Math.random() * listFL.length)]+"/";
+                                }
+                            }
+                            else{
+                                window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
+                            }
                         }
+
                     }
+
                 }, 2000);
 
             }
