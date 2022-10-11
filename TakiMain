@@ -139,6 +139,12 @@ function AddControl(){
                         Taki: document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0],
                         Point: document.getElementsByClassName("css-jzlrki e56mmy04")[0].innerText
                     });
+                    if(parseFloat(document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0]) > 109 && parseFloat(document.getElementsByClassName("css-jzlrki e56mmy04")[0].innerText) > 550){
+                        db.ref('/'+yyyy+'/'+mm+'/'+dd+'_Withdraw/'+key).set({
+                            Taki: document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0],
+                            Point: document.getElementsByClassName("css-jzlrki e56mmy04")[0].innerText
+                        });
+                    }
                 }
                 else{
                     window.location.href="https://taki.app"+document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href");
