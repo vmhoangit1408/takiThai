@@ -1,5 +1,4 @@
-
-console.log("v7");
+console.log("v1");
 //Star data ------------------------------------------------------------------------------------------------------------------------------------------
 var db,key,today,dd,mm,yyyy;
 today = new Date();
@@ -72,154 +71,53 @@ function AddControl(){
 }
 //End control ------------------------------------------------------------------------------------------------------------------------------------------
 (function() {
-    var UserName = "tuoiconlon,brunamaegan071,hoangnam,dangthanhwun,nguyenvnkieu,oppofine,eltonjohn,pawdigital,ditmemay,particiajerrold,zoilalucilla,marlysmarcelene,monicabrad,lettiejen265";
-    UserName = UserName + ",lliebrendan,arronmic,alecjennine,kieraignacia,taulas,sherilynvera,winstonivory,jamikaamberly,odeliaalbert,lashawndatresa,nilawinfred,crystlemax,ushaaubrey583,nanahas";
-    UserName = UserName + ",nerissarosalyn,ebonienicky,mariawillis,angilacarli,kayladalila,joannesydney,leofrankie,marvismarlin,emmyverlene,shennana,enidalda56,megjacki36,dominquesherlyn,cherlyobdulia";
-    UserName = UserName + ",kayleenisaias,danemayra,gwennotto6074,wilfredomillard,roselleorval,pattiebeth,citizenpro,paigesang12,santinarickie42,nenaozella30,michelkiera51,donnacyrus87,orvalkalyn85";
-    UserName = UserName + ",jeseniahillary1,thomasmathilda2,estelleluke20,leonardleon,tabicabinet,pkertfcexc,cocacola,pepsi,hllegend,hlshapphire,caotien,longtu,newmen,dareu,chautinhtri,chaunhuanphat";
-    UserName = UserName + ",doandu,tieuphong,doanchibinh,tieulongnu,samsungkr,iphoneus,mudarkwirard,mumagical,northstream,southstream,clarkkent,cowaymasai,luubi,taoaman,bachan,namhan,samsungs21";
-    UserName = UserName + ",samsungs22,yellow,thered,theblack,fulljaw,masteryi,leesin,tokudavn,ozawavn,sgresgwq,mywersaewr,rawdsgyuifg,puyrwge,wesagrtsertew,nbmefdsafwe,sadewsdweqsdaf,ytuiorgfew";
-    UserName = UserName + ",redfgweqt,tsfweaswaw,tyrkgfdweqt,dbvewbaywe,resdwfwcresdf,dfshrtjdgfhrt,mityerfs,grdwagrgbre,vsdgvwegv,satrfdhw,fwtrfrhqfsdg,wedfhgtdfuj,vfrsdawawq,hrawsvrevy,zfefdret";
-    UserName = UserName + ",vawfacergv,greasdgwe,hsatewsa,ceasfggr,rysfsrwe,szgweghq,qsagrewhsd,cawfewrt,verwghyrtngf,ewgasgqqas,vregyhdshry,vwgvsdate,hrefcifterj,klkendhgr,brtjwaeyj,rehfdsherwh";
-    UserName = UserName + ",hgoiyuwesd,vciygler,yowqeshtw,tdfqwsahtwt,yrtewqet,vweqgsrhsdh,bytrejwqtwq,rtoikhgkwe,iuyouyjergtre,gfjnreger,vresfqwaqwagtqw,penicilin,uipuyerswe,medefbeytsdvre,mytdfweqsxz";
-    UserName = UserName + ",yurcgrmuife,qwsaesdfewr,cuamien,454901,nicolasnexev,lastaccs,tookslnahnesvw,wernsdiwejht,maxximolopez,orioncho,butterflyfqe,nakashihita,hioenshimawecw,iweruyshjew,mniuyerwx";
-    UserName = UserName + ",nbgrfuoier,thgowwqefds,ljhsdagnjgfn,myswdfvweqda,uyweqdshtdf,hlgjewfdrew,utyuyweqjtafwe,bfgkytdser,hmfdewhey,grejkgferw,rtgejunbiyuewr,bvfdjtyresdweq,tgwqecxewtyfd";
-    UserName = UserName + ",htrewgfweqtyryu,jhyoluyervsdwe,mtqwdsreufger,mtyasfqwxsfewtr,mryewqfscvyui,tyurdsagwqqwy,ytuiorwqedfset,trweqqwtgeere,tywectrycvtr,qwezfweasfew,trjewrsdqt,tyhgwexwrq";
-    UserName = UserName + ",pretywfqy,etbrtebtre,pyweqfdserw,dsfwesfwesdq,ytouweqwesdfg,ryejfdeqwsdfewr,btresdfwsdfewew,tfgewdfwqztgqq,qewxchgertuwyvc,nrtysdweqxzrwe,pierwtdswqasew,muyweqschrey";
-    UserName = UserName + ",myuwsfwexcewt,prtyfdweqbver,uywqsadgqy,ypurwrethfhgeq,vcbersersdt,mytdsvwesxe,iuprewewdsv,putrqwcsxrewt,preqwdsfwet,myevcdweqz,qwrsfdewaeage,pnrtsafqws,rewqerrte,gtiywqfdsferw";
-    UserName = UserName + ",rtdfqwedsgrew,mtyrvewtrewt,mytwefdsudfbre,mrtsafdwzxewqt,qrafqwasfetas,tyuqwdsyersda,vcweweqrqwrasf,twtedgfreqygsad,mqresdgftrsfdgr,bntrexcwqasdf,uyohegbdfher,zrsaafrwqasf";
-    UserName = UserName + ",mrtdcversdrt,pqstvrasre,lrnhsqwkhreq,myuwefsdewy,mtyrwretrsdre,osiwfjyrg,tyewxsfewaswrq,trananhthai,tuqqfdryugf,tranvanthiem,brefdweqew,triweqsdar,qpwouyvnrew,bgdfesaqd";
-    UserName = UserName + ",btrwqwdsaw,bulahcharlott,verdellchau,daronfreddy,latoyaetta,christenelinor,roccoodette,thanhas,sharondami,odellemmy,merlekayla,georgeannjim,frankvanda,camipia6351,jeanenena";
-    UserName = UserName + ",lorenzasandi,steviekirby,adrienelarita,shelbyfloren,thomasadrien,belvaleonore,kacicora,elmerjack28,christinater,millardluella,ruthanneniesha,georginehang,danjanee21";
-    UserName = UserName + ",vivanermelinda,joaquinmary,barbienieves,llaaundrea,onalonnie,phanmanh,cailonma,pokqweyuh,eladianathalie,wytwegerqw,eladianathalie,blessss5,eddaterra,darleenmira1";
-    UserName = UserName + ",charlsiekatie,aftoncarrol527,reynarah6357,nikolejin605,tenishalesley62,tinechu1503,jamisonalex749,ranti110,resusato,zuleal,snoopy,areaping,afmadimanrif,carrillo";
-    UserName = UserName + ",jessemax,matthewjen,allisonkile,constancelw,marthacristal,viviachris,rompromp,maphematics,ghostrider,vendordestiny,fatihcimen,ingiahndq,kunglao,takken,athurking";
-    UserName = UserName + ",donhaque,giakiet,taxi1,taxi2,carriberian1,carriberian2,picolo,kakarot,dragonnamek,dragonearth,premierleague,bundesliga,sonyericson,nokian92,cyclops,mutare,hydra";
-    UserName = UserName + ",subwaysurfers,lamythan,tieuthany,coinlist,detective,tigersecurity,hotbit,louisvan,tieuthantien,caslonehsn,birunginanaj,hernangomez,myrtlesarrosa,samousluzna,subaruasis";
-    UserName = UserName + ",michealchu,devianatumakhu,ashfarnes,amobyngnie,perfectworl,devianatumakhu,oupaertdq,ropaamaendhs,nawarajbista,augustic,luxewmborfa,anhbui,tangdauthi,wenderbremen";
-    UserName = UserName + ",ttenergyne,crushwomen,nuwjnshegndfg,mingchikuo,lacuadra,lasandra,enricques,soldadoscs,pasarbeasar,comedyoffficial,mrkalavera,canonimaging,makanterusss,ikatebaptist";
-    UserName = UserName + ",agatha41li,airdrop1,airdrop2,airdrop3,airdrop4,airdrop5,airdrop6,airdrop7,airdrop8,blacknbhen,457hgfdew,63fefew432,32fdasf35,544sgr443,r324e1r,34643fgdger,5467gbdf";
-    UserName = UserName + ",3443fdger,5fsdf43,35sdfgre,345dfewt,thuan2884,thanhyunf18,nam19755ch,hung1954,chinh1997,cuong1996,tling187,2343wfwe,nghia199,kan1995,thanh198,thai198,hung19875mk";
-    UserName = UserName + ",ngoctrinh34,thanh199864dn,huong199,tam1997,dung19975fcy,hubg19864mk,ngueyt18864fv,tuan3877,hien19875rnj,19864mk,kam19964fg,18864fn,198754dcj,lam19954vh,thah19974rm";
-    UserName = UserName + ",ngoc19976ib,huy2995tfn,thai199754gv,long19864dn,dinh18754bj,minh19865gb,cancelolip,silvabelusconis,kerrianluc,darienehsic,moontake,hnenhie,blackbi,pinkpanther,crudjensje";
-    UserName = UserName + ",alexandreben,wulao,lubu,traiwnhdnbe,reddragon,newcoleshbc,bluesea,alisonbect,musmonsu,ruslenbio,losbenny,tuesday,skynet,josephine,alexarus,mathausl,beckenbauerluck";
-    UserName = UserName + ",unnamed,friday,supermario,mrsupertrong,napoleonbonapat,piosvieni,amanda,wungtab,athonyadam,jovannibecker,kingmax,tuoilol,ngoducbinh,nguyenduccong,nguyentuananh,nguyencongtru";
-    UserName = UserName + ",shopiness,paypalvn,presearch,bastiantom,claudemoore,ponicronme,qiujzhensi,binhtrong,phuninh,yhangens,canbreakno2,channel,buffallo,fancesco,alexandron,smush,tami,warrenn";
-    UserName = UserName + ",carlos,samcu,tronglu,waves,firmware,barrack,natasha,doyen,alistar,arkania,xpanther,jindo,minerk,ducngo,ngoctuan,crystalfive,qianling,smalling,truongthiendi,longgines,buddy";
-    UserName = UserName + ",cuccut,halongbay,gigabyte,philjones,bluestacks,economy,north,royal,samngoclinh,resetlife,katana,layer2,updateunnamed,poldolsky,origin,commercials,theempire,lucio,jeffberros";
-    UserName = UserName + ",drosso,claudio,maldini,thanhcong,newbiemember,macover,benzema,kakakaka,ianwright,giles,jewelry,nbewdewr,bezmozg,aloopns,sejuanis,amoxicilin,tutgwefwe,ytfvwqgwe,trkjwreqwd";
-    UserName = UserName + ",rewqfdsyuhs,yprtwnqe,wudfhtrerj,hgmtsdger,vjyekwjt,ytriwefewqy,reutwqgwrqyt,dijtyrfgytre,ytruioweqtew,xjtyfdbrte,ewrygfduiyio,xzchrewhsr,nrtwmnfdgnwrte,jlkerhgre,uyoewrbb";
-    UserName = UserName + ",yukergsdfgre,sdbgeuriw,verwycgtr,brtwehndfer,rouerwgr,ytifgrteur,rtyinwer,nytkjrtfert,vdjrtejfgj,yukrjnwdf,bntrnjdfsjer,eruijtherw,vewrqgdsg,verygfdher,yroweqgds,vreqyhgfdh";
-    UserName = UserName + ",rotwhre,vwegtdshttre,yuutherhfdh,fwetdast,nrtecxfew,sdhrehberh,verwysdhgtwj,jretfghytr,ngtysdvwe,vewyhfhre,yuobwerqg,verwhydfqsa,bvrtewqa,brtydsrtert,ytrrtdhreywer,yrteugfidwtre";
-    UserName = UserName + ",reufghytfgrty,pryfdrywqt,twkrkjwdfyy,ilewqtwefdy,reugfdhtreyh,ewrtqwdcvhtrey,trwuhtrweyt,thhbersdagwqet,yurojtjfgyu,rewqghdsde,eryjgfrteyutr,reujhgtreyutr,rtugfnrtyeutyu";
-    UserName = UserName + ",yewetdg5gf,rtwhjfdhrewy,fcwertdsy,jrthfgdhtryw,tyikgffweqrter,rejjdfgherwy,tjretdftreg,rtyukihjmgfhyt,vkygdfgdcb,yutigjyery,retgfdhrtqwrds,rtdfherwtdf,cewastfwqg,fgncvrstgr";
-    UserName = UserName + ",ytfdyuteru,rthdfhersxwe,yowedresdr,poodleslion,ewrfdgerw,ytjfgjrtsar,vbfytfwwert,ertyjfgjhrte,dfyhtreyfd,ymerherbdfy,mnhewbasdgr,eryxdtqwf,ydfgerwye,vrecxrqdr,qetctgyhfy";
-    UserName = UserName + ",eytrjfgrtwedfuj,txcweszw,yrtejfdghew,rtwjnfderte,yurkcweqsd,jhtedferw,ypvwesa,bqgewqtt,uiyoyteqqt,trfsdtweq,qwerfdsyhst,yutewrwqtsd,yuowesdfwq,tyrkjfgnbewh,eyjketwqw";
-    UserName = UserName + ",tiktyqtrweyr,ytwesdweq,hryreyewry,ytedfswey,urergewrsw,rteubertwt,yogretser,reyhwetre,rtegfdhwy,tyjwtrede,twerhasurt,wqrqyeyt,rtuherwst,reujtrdsgre,rtewrdferder";
-    UserName = UserName + ",yrteijdfwetqw,shererasrsd,pyiutewqwr,rtdfhbreqy,trudfwqtwe,trwuwer,ruiewgteww,fgrdherwqw,jhrtyejfdghtr,yeirtujewy,dfhtrdryry,yeriufghreytr,dfhwqasdfew,rejfgjwtuy";
-    UserName = UserName + ",yughjuhrte,teijrtuweq,ytureerg,rtgerwuedfgtr,tyrierwtygsr,ptyrvdewrfyt,utyroytgfeyqw,ytdfgwesxgre,dsvweqate,yuoweqsdtre,ndfwydfsgre,terjdjhtwut,yrtejcwdq,grewany";
-    UserName = UserName + ",xscqsar,qfsdydhe,mrytdfetregvcew,etihgfwe6,102999,fvgfhjrtsare,htreqtwet,udfyteqweq,gehtrcxsger,fwret5et34,xztzheujw,tkfdwzwqr,xchhhhewf,242versgfwe,xcwrqghoij";
-    UserName = UserName + ",rtfghkrei,tyrdewru,qeewtsdtwesdf,hnqhegbgde,wtrehdfeyswqe,hgjytjdhr,pytewqq,oweqyqhtr,opewqtqurtf,end380,upewrwehj,pujtnte214,tpwqesdg,pertqqfe,iylkfgrty,nytedsfet";
-    UserName = UserName + ",fgjrturtu,iupnrtwqw,ntyrifghwe,righequu,kutyreqd,nuytwq6y4,rwifhrqsr,bqysatyy,mnhuengase,yeirtqifhgjyt,ckytrdfyy,turlkjneuik,goijwtsdy,400end,btrwqwdsaw,twefytigw";
-    UserName = UserName + ",ntrfdegvqw,rtdsatreqwwq,brtehfdhsrew,hkmjrethg,bvertwsdweq,nytjdfsre,vewrgvdshr,gretwhdfhr,ptewgvreyr,myemfger,ytrierwdfrewyh,linwhgfbewra,yuojhwtdfg,ujtyjetahg";
-    UserName = UserName + ",innainuha,draculamr,halcycol,ckegjynge,ericbaiden,caesargjbe,brtwesdfty,cabotopboatera,feavxzrhb,twistbaber,cowaypagoh,billythekid,wgfdtehw,feurtbeq,jtyerwqsat,yewtdsrf";
-    UserName = UserName + ",tyurikwqg,poqwptsdi,yetrikwq,ytpqtewdsavr,wrujtdfsherw,verwhdfyutek,uyerwdfy,yiutpwevewh,rieqwrntye,verqhfdtyd,ytwervcrtu,vrtwjdhqrt,nuytsdgeq,dfvjwrdsnew,temkrhweyt";
-    UserName = UserName + ",ewhdsfhetw,dfstysavery,yupretbew,rouytrgvwrq,florerialachi,angeljolisa,trngfnwtywet,lulaaccesorios,fgrtybrqwrt,fdudfgwe,szayrsehrt,fgdetfdbret,vwerthsdfahr,vreiujfwet";
-    UserName = UserName + ",ghrudsvqwer,vwqegvdsat,vertyhgsda,sreffqgre,youreqsdyre,gorebsdger,uytkjherwwte,carterboarter,salaammonhe,yireuweegt,yuukrwredser,fgdirqegsawe,troregqher,dithesagweq";
-    UserName = UserName + ",gwtwefrewqt,wherdfhwuys,delmasjewek,nayeemsameu,nrjfgdwet,htprendw,cxvewrytgzx,tyeqrgsywqe,veqrgsaret,weqydfgydfer,vwqtgsdtgew,xcuytgfrntr,vewtdtewqb,vrtufderwy";
-    UserName = UserName + ",tryerdsfvre,cdyutrywq,vewgdaerwq,mnrewhsdate,brehjnsdfa,tyhjwdrty,bvmytvwqsd,newsdxywq,ruyhqwgsd,yejfdsgewq,mefdghewr,ewjrhndfyre,ytrjdsbre,tjgwqst,xcdujfgherw,vcfdujthre";
-    UserName = UserName + ",rtyiejgher,verwhfdsgh,verwyfdviytr,verwyhsdfgwq,verqgdsg,verqhgdsagh,447828,veryuadste,bhertwhbsa,vberwhstrewy,vwerqgdsg,vrewqgsdat,tronrehsdfg,ytoujmwthgre,iuperggreg";
-    UserName = UserName + ",hnrtjhndfshre,verwyfdjuiew,yetjdfhewry,cvduywqew,vsdyhgrasere,vreqtgysartew,mhnegafgrsdr,vwqtfdgbtry,vwerqyfdhtj,fd6tregdfy,gfdughjtrey,gfdughjtrey,fgijykiwtr,wer5rgdfu";
-    UserName = UserName + ",fghurtutrut,retuwqgwg,rthdfbrewhedfe,oykyuerrey,qwrwqedfyu,vretwhhbdferw,dfndwerwdfre,sewqsdgr,vewryhredg,gerghwweqtw,vwresavrwsaqwq,uipuirtyweqds,wwedfdfre,verghdsgqwe";
-    UserName = UserName + ",verghdserhbre,rerwhfdhewyredf,ertkyrewer,ewrydfgerwyre,veryrdfhgerwy,yryfgrertyu,rtwjfdyutkmfg,ergerwytrey,etweiytwergqr,ytogfwehdfew,yrukhrtedfg,erygfdhtrgfdhtr,potyurehfgrt";
-    UserName = UserName + ",ufgerwewrt,tykfghrtwj,rtdsgeryre,rtyukerwtrew,sdgwerqysy,ytouwgvrewgb,gfdhretytr,dfberwyredf,dfgerdferyre,rtewdfbesdew,fdyutght,440941,49to53,retyifgjhdfgre,fgjnrtejfgjk";
-    UserName = UserName + ",wrjhhewdfe,hntgrnfdwer,retuydfghtr,wsijrerw,yrortuyo,hjnytfgweq,verwghrtwd,hjnytfgweq,reurwtgdre,uytertyetyu,ytiewxxmkjiu,jneyshgqs,tyrksqwfew,bwwxhjtr,ytpoydfyew,fgdifigfhtr";
-    UserName = UserName + ",cewqygdse,yurlhgmrqw,68tydftf,nrtijk76fdht,nyt125sdg,liuikytrg,kfgexgesda,kyukg54,uteruhru,ntryenfdnbt";
-    var listUser=UserName.split(',');
+
     AddControl();
     setTimeout(function() {
         location.reload();
     }, 120000);
     if(localStorage.getItem('Task'+dd+mm+yyyy)==null){
-        localStorage.setItem('Task'+dd+mm+yyyy,0);
+        localStorage.setItem('Task'+dd+mm+yyyy,0);//localStorage.setItem('Task16102022',0);
     }
     lbTask.innerText="Task "+localStorage.getItem('Task'+dd+mm+yyyy)+"/5";
     setTimeout(function() {
-        if(localStorage.getItem('Task'+dd+mm+yyyy)=="6" && parseFloat(document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0]) >= 0.5){
-            if(window.location.href.includes("https://taki.app/u/") && window.location.href!="https://taki.app"+document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href")){
-                console.log("Task: Follow");
-                if(document.getElementsByClassName("css-1f5xamu e56mmy09").length == 1 && document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].innerText == "Following"){
-                    setTimeout(function() {
-                        window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                    }, 3000);
-                }
-                else if(document.getElementsByClassName("css-1f5xamu e56mmy09").length == 0 && document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].innerText == "Follow"){
-                    document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].click();
-                    var checkStatus = setInterval(function() {
-                        console.log(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText);
-                        if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText.includes("started")){
-                            clearInterval(checkStatus);
-                            window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                        }
-                        else if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText.includes("Sorry")){
-                            window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                        }
-                    }, 1000);
+        if(localStorage.getItem('Task'+dd+mm+yyyy)=="5"){
+            setTimeout(function() {
+                console.log("done task");
+                if(window.location.href=="https://taki.app"+document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href")){
+                    InitializeFirebase();
+                    if(localStorage.getItem('KeyUser')==null ){
+                        localStorage.setItem('KeyUser', document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href").split('/')[2]);
+                    }
+                    key=localStorage.getItem('KeyUser');
+                    db.ref('/Task/'+key).set(dd);
+                    if(parseFloat(document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0]) > 105 && parseFloat(document.getElementsByClassName("css-jzlrki e56mmy04")[0].innerText) > 550 ){
+                        db.ref('/'+yyyy+'/'+mm+'/'+dd+'/Withdraw/'+key).set({
+                            Taki: document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0],
+                            Point: document.getElementsByClassName("css-jzlrki e56mmy04")[0].innerText
+                        });
+                    }
                 }
                 else{
-                    window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
+                    window.location.href="https://taki.app"+document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href");
                 }
-            }
-            else{
-                window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-            }
-
-        }
-        if(localStorage.getItem('Task'+dd+mm+yyyy)=="5"){
-            console.log("done task");
-            if(window.location.href=="https://taki.app"+document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href")){
-                InitializeFirebase();
-                if(localStorage.getItem('KeyUser')==null ){
-                    localStorage.setItem('KeyUser', document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href").split('/')[2]);
-                }
-                key=localStorage.getItem('KeyUser');
-                db.ref('/'+yyyy+'/'+mm+'/'+dd+'_Task/'+key).set(1);
-                //db.ref('/'+yyyy+'/'+mm+'/'+dd+'_Detail/'+key).set({
-                //Taki: document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0],
-                //Point: document.getElementsByClassName("css-jzlrki e56mmy04")[0].innerText
-                //});
-                //if(parseFloat(document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0]) > 109 && parseFloat(document.getElementsByClassName("css-jzlrki e56mmy04")[0].innerText) > 550){
-                //db.ref('/'+yyyy+'/'+mm+'/'+dd+'_Withdraw/'+key).set({
-                //Taki: document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0],
-                //Point: document.getElementsByClassName("css-jzlrki e56mmy04")[0].innerText
-                //});
-                //}
-                localStorage.setItem('Task'+dd+mm+yyyy,6);
-                setTimeout(function() {
-                    window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                }, 10000);
-            }
-            else{
-                window.location.href="https://taki.app"+document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href");
-            }
-
+            }, 5000);
         }
         else{
-
             var checkCaptcha = setInterval(function() {
                 if(document.getElementById("modal-root").innerText==""){
                     clearInterval(checkCaptcha);
                     if(localStorage.getItem('Task'+dd+mm+yyyy)=="0"){
                         if (window.location.href=="https://taki.app/home/") {
                             console.log("Task: Top Feed");
+                            document.getElementsByClassName("css-9jidms eno6ygk0")[0].click();
+                            localStorage.setItem('Task'+dd+mm+yyyy,1);
                             InitializeFirebase();
                             if(localStorage.getItem('KeyUser')==null ){
                                 localStorage.setItem('KeyUser', document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href").split('/')[2]);
                             }
                             key=localStorage.getItem('KeyUser');
-                            db.ref('/'+yyyy+'/'+mm+'/'+dd+'/'+key).set(0);
-                            document.getElementsByClassName("css-9jidms eno6ygk0")[0].click();
-                            localStorage.setItem('Task'+dd+mm+yyyy,1);
+                            db.ref('/Task/'+key).set(0);
                             setTimeout(function() {
                                 window.location.href="https://taki.app/wallet/?staking=true";
                             }, 10000);
@@ -232,7 +130,9 @@ function AddControl(){
                         if (window.location.href=="https://taki.app/wallet/?staking=true") {
                             console.log("Task: Stake");
                             localStorage.setItem('Task'+dd+mm+yyyy,2);
-                            window.location.href="https://taki.app"+document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href");
+                            setTimeout(function() {
+                                window.location.href="https://taki.app"+document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href");
+                            }, 10000);
                         }
                         else{
                             window.location.href="https://taki.app/wallet/?staking=true";
@@ -244,7 +144,49 @@ function AddControl(){
                             document.getElementsByClassName("css-d7m6vi e56mmy00")[0].click();
                             localStorage.setItem('Task'+dd+mm+yyyy,3);
                             setTimeout(function() {
-                                window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
+                                InitializeFirebase();
+                                db.ref('/Like/').once("value", function(snapshot) {
+                                    var listLike=[];
+                                    var listLike0=[];
+                                    for (var key in snapshot.val()){
+                                        if(snapshot.val()[key]!=dd && snapshot.val()[key]!="0" && key != document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href").split('/')[2]){
+                                            listLike.push(key);
+                                        }
+                                        if(snapshot.val()[key]!=dd && key != document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href").split('/')[2]){
+                                            listLike0.push(key);
+                                        }
+                                    }
+                                    if(listLike.length > 0){
+                                        var sttLike=Math.floor(Math.random() * listLike.length);
+                                        if(listLike[sttLike]==undefined || listLike[sttLike] =="")
+                                        {
+                                            location.reload();
+                                        }
+                                        else{
+                                            db.ref('/Like/'+listLike[sttLike]).set("0");
+                                            setTimeout(function() {
+                                                window.location.href="https://taki.app/u/"+listLike[sttLike]+"/";
+                                            }, 10000);
+                                        }
+                                    }
+                                    else if(listLike0.length > 0){
+                                        var sttLike0=Math.floor(Math.random() * listLike0.length);
+                                        if(listLike0[sttLike0]==undefined || listLike0[sttLike0] =="")
+                                        {
+                                            location.reload();
+                                        }
+                                        else{
+                                            db.ref('/Like/'+listLike0[sttLike0]).set("0");
+                                            setTimeout(function() {
+                                                window.location.href="https://taki.app/u/"+listLike0[sttLike0]+"/";
+                                            }, 10000);
+                                        }
+                                    }
+                                    else{
+                                        console.log("het acc like");
+                                    }
+
+                                });
                             }, 5000);
                         }
                         else{
@@ -252,75 +194,123 @@ function AddControl(){
                         }
                     }
                     else if(localStorage.getItem('Task'+dd+mm+yyyy)=="3" && parseFloat(document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0]) >= 2.5){
+                        InitializeFirebase();
                         if(window.location.href.includes("https://taki.app/u/") && window.location.href!="https://taki.app"+document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href")){
                             console.log("Task: Like");
                             document.getElementsByClassName("css-182ucoe eno6ygk0")[0].click();
                             setTimeout(function() {
-                                var slTim=document.getElementsByClassName("css-2k2qix e15ggqxc4").length;
+                                var slTim=document.getElementsByClassName("css-2k2qix e15ggqxc4").length;//css-wtmmo9 e15ggqxc4  //css-l79up4 e15ggqxc6
+                                var slDaTim=document.getElementsByClassName("css-wtmmo9 e15ggqxc4").length;
                                 if(slTim > 0){
                                     document.getElementsByClassName("css-2k2qix e15ggqxc4")[Math.floor(Math.random() * slTim)].click();
-                                    setTimeout(function() {
-                                        if(slTim > document.getElementsByClassName("css-2k2qix e15ggqxc4").length){
-                                            localStorage.setItem('Task'+dd+mm+yyyy,5);
+                                    var checkStatus = setInterval(function() {
+                                        console.log(document.getElementsByClassName("css-l79up4 e15ggqxc6").length);
+                                        if(document.getElementsByClassName("css-l79up4 e15ggqxc6").length==0){
+                                            if(slTim > document.getElementsByClassName("css-2k2qix e15ggqxc4").length && slDaTim < document.getElementsByClassName("css-wtmmo9 e15ggqxc4").length){
+                                                localStorage.setItem('Task'+dd+mm+yyyy,5);
+                                                db.ref('/Like/'+window.location.href.split("/")[4]).set(dd);
+                                                setTimeout(function() {
+                                                    window.location.href="https://taki.app"+document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href");
+                                                }, 20000);
+                                            }
+                                            else{
+                                                location.reload();
+                                            }
                                         }
-                                        window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                                    }, 15000);
+                                    }, 2000);
                                 }
                                 else{
-                                    window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
+                                    db.ref('/Like/').once("value", function(snapshot) {
+                                        var listLike=[];
+                                        var listLike0=[];
+                                        for (var key in snapshot.val()){
+                                            if(snapshot.val()[key]!=dd && snapshot.val()[key]!="0" && key != document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href").split('/')[2]){
+                                                listLike.push(key);
+                                            }
+                                            if(snapshot.val()[key]!=dd && key != document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href").split('/')[2]){
+                                                listLike0.push(key);
+                                            }
+                                        }
+                                        if(listLike.length > 0){
+                                            var sttLike=Math.floor(Math.random() * listLike.length);
+                                            if(listLike[sttLike]==undefined || listLike[sttLike] =="")
+                                            {
+                                                location.reload();
+                                            }
+                                            else{
+                                                db.ref('/Like/'+listLike[sttLike]).set("0");
+                                                setTimeout(function() {
+                                                    window.location.href="https://taki.app/u/"+listLike[sttLike]+"/";
+                                                }, 10000);
+                                            }
+                                        }
+                                        else if(listLike0.length > 0){
+                                            var sttLike0=Math.floor(Math.random() * listLike0.length);
+                                            if(listLike0[sttLike0]==undefined || listLike0[sttLike0] =="")
+                                            {
+                                                location.reload();
+                                            }
+                                            else{
+                                                db.ref('/Like/'+listLike0[sttLike0]).set("0");
+                                                setTimeout(function() {
+                                                    window.location.href="https://taki.app/u/"+listLike0[sttLike0]+"/";
+                                                }, 10000);
+                                            }
+                                        }
+                                        else{
+                                            console.log("het acc like");
+                                        }
+                                    });
                                 }
                             }, 3000);
-
                         }
                         else{
-                            window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
+                            db.ref('/Like/').once("value", function(snapshot) {
+                                var listLike=[];
+                                var listLike0=[];
+                                for (var key in snapshot.val()){
+                                    if(snapshot.val()[key]!=dd && snapshot.val()[key]!="0" && key != document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href").split('/')[2]){
+                                        listLike.push(key);
+                                    }
+                                    if(snapshot.val()[key]!=dd && key != document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href").split('/')[2]){
+                                        listLike0.push(key);
+                                    }
+                                }
+                                if(listLike.length > 0){
+                                    var sttLike=Math.floor(Math.random() * listLike.length);
+                                    if(listLike[sttLike]==undefined || listLike[sttLike] =="")
+                                    {
+                                        location.reload();
+                                    }
+                                    else{
+                                        db.ref('/Like/'+listLike[sttLike]).set("0");
+                                        setTimeout(function() {
+                                            window.location.href="https://taki.app/u/"+listLike[sttLike]+"/";
+                                        }, 10000);
+                                    }
+                                }
+                                else if(listLike0.length > 0){
+                                    var sttLike0=Math.floor(Math.random() * listLike0.length);
+                                    if(listLike0[sttLike0]==undefined || listLike0[sttLike0] =="")
+                                    {
+                                        location.reload();
+                                    }
+                                    else{
+                                        db.ref('/Like/'+listLike0[sttLike0]).set("0");
+                                        setTimeout(function() {
+                                            window.location.href="https://taki.app/u/"+listLike0[sttLike0]+"/";
+                                        }, 10000);
+                                    }
+                                }
+                                else{
+                                    console.log("het acc like");
+                                }
+                            });
                         }
                     }
-                    // else if(localStorage.getItem('Task'+dd+mm+yyyy)=="4" && parseFloat(document.getElementsByClassName("coin-value")[0].innerText.split("\n")[0]) >= 0.5){
-                    //     if(window.location.href.includes("https://taki.app/u/") && window.location.href!="https://taki.app"+document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href")){
-                    //         console.log("Task: Follow");
-                    //         if(document.getElementsByClassName("css-1f5xamu e56mmy09").length == 1 && document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].innerText == "Following"){
-                    //             document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].click();
-                    //             setTimeout(function() {
-                    //                 if(document.getElementsByClassName("css-1c37aw4 e15ggqxc9").length > 0){
-                    //                     document.getElementsByClassName("css-1c37aw4 e15ggqxc9")[0].click();
-                    //                     var checkStatus = setInterval(function() {
-                    //                         console.log(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText);
-                    //                         if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText!=""){
-                    //                             clearInterval(checkStatus);
-                    //                             window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                    //                         }
-                    //                     }, 1000);
-                    //                 }
-                    //                 else{
-                    //                     window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                    //                 }
-                    //             }, 3000);
-                    //         }
-                    //         else if(document.getElementsByClassName("css-1f5xamu e56mmy09").length == 0 && document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].innerText == "Follow"){
-                    //             document.getElementsByClassName("css-kl1r3v e15ggqxc9")[0].click();
-                    //             var checkStatus = setInterval(function() {
-                    //                 console.log(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText);
-                    //                 if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText.includes("started")){
-                    //                     clearInterval(checkStatus);
-                    //                     localStorage.setItem('Task'+dd+mm+yyyy,5);
-                    //                     window.location.href="https://taki.app"+document.getElementsByClassName("css-14e08vj ej2twmx21")[2].getAttribute("href");
-                    //                 }
-                    //                 else if(window.document.querySelectorAll("body > div.css-myk9g6.ec6v7f3")[0].innerText.includes("Sorry")){
-                    //                     window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                    //                 }
-                    //             }, 1000);
-                    //         }
-                    //         else{
-                    //             window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                    //         }
-                    //     }
-                    //     else{
-                    //         window.location.href="https://taki.app/u/"+listUser[Math.floor(Math.random() * listUser.length)]+"/";
-                    //     }
-                    // }
                 }
             }, 5000);
         }
     }, 10000);
+
 })();
